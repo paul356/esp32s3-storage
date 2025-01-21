@@ -6308,7 +6308,7 @@
 		(uuid "004340f2-5382-4f23-995e-0889c3edfa18")
 	)
 	(label "SDHOST_CMD"
-		(at 170.18 55.88 0)
+		(at 170.18 78.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6484,7 +6484,7 @@
 		(uuid "264b902a-cc2a-4a5c-a8fb-ea400d734d4b")
 	)
 	(label "SDHOST_DAT0"
-		(at 170.18 78.74 0)
+		(at 170.18 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6627,7 +6627,7 @@
 		(uuid "4e8024a5-b48c-40e8-97f6-1ca1efe094ca")
 	)
 	(label "SDHOST_DAT2"
-		(at 170.18 50.8 0)
+		(at 222.25 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6924,7 +6924,7 @@
 		(uuid "a870e11d-e289-4ca6-9385-558622134b78")
 	)
 	(label "SDHOST_CDET"
-		(at 222.25 40.64 0)
+		(at 170.18 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7100,7 +7100,7 @@
 		(uuid "e57013e4-d95d-4969-a4bc-f78846e09ee6")
 	)
 	(label "SDHOST_DAT1"
-		(at 170.18 81.28 0)
+		(at 170.18 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7177,7 +7177,7 @@
 		(uuid "efb0128d-6b53-4e3a-9b84-c27fb682a25e")
 	)
 	(label "SDHOST_DAT3"
-		(at 170.18 53.34 0)
+		(at 170.18 81.28 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10393,7 +10393,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_0603_1608Metric"
+		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
 			(at 33.02 29.21 0)
 			(effects
 				(font
