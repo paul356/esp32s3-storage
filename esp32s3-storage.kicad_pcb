@@ -6877,6 +6877,19 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C262268"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c15c65bc-b121-461b-ba28-12d5d4b468d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/8f175e77-b1d2-4db6-9ad4-d525f2a5bff9")
 		(sheetname "Root")
 		(sheetfile "esp32s3-storage.kicad_sch")
