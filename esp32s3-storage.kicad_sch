@@ -1208,8 +1208,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
+			(property "Reference" "J2"
+				(at -2.0828 -8.255 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1217,14 +1217,14 @@
 				)
 			)
 			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
+				(at -2.0828 -5.9436 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "user_created:1x2 pin gap 1.25mm SMD socket"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1243,6 +1243,33 @@
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part #" "C2845379"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1332,6 +1359,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 3.81 270)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4213,6 +4276,12 @@
 		(uuid "5e12b33c-7d10-4407-8d55-27d61cc28b17")
 	)
 	(junction
+		(at 27.94 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73e2fbf1-0b43-405b-9aba-d684d5088a90")
+	)
+	(junction
 		(at 33.02 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4247,12 +4316,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98536839-2d7f-484b-a277-d06960c43d51")
-	)
-	(junction
-		(at 27.94 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "99c06882-6bb7-47c5-ae57-812eff280977")
 	)
 	(junction
 		(at 26.67 166.37)
@@ -4794,6 +4857,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 63.5) (xy 33.02 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53ffd95d-a669-4041-8434-a7b4dc273b4b")
+	)
+	(wire
+		(pts
 			(xy 213.36 63.5) (xy 222.25 63.5)
 		)
 		(stroke
@@ -4801,16 +4874,6 @@
 			(type default)
 		)
 		(uuid "540fada7-b2cc-4d33-bf37-c5f5374d6664")
-	)
-	(wire
-		(pts
-			(xy 27.94 60.96) (xy 33.02 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54a6cde0-938f-4a51-9e46-687c4910ac74")
 	)
 	(wire
 		(pts
@@ -4914,13 +4977,23 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 60.96) (xy 27.94 60.96)
+			(xy 22.86 60.96) (xy 27.94 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "65f404af-b3c3-4c02-83d5-6f5c7bb27f11")
+	)
+	(wire
+		(pts
+			(xy 27.94 60.96) (xy 33.02 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b58e2d7-da39-47ee-9e8d-51bd96a8d15f")
 	)
 	(wire
 		(pts
@@ -5361,16 +5434,6 @@
 			(type default)
 		)
 		(uuid "ae04b91d-d2a2-4fea-a02c-0a753a29a6b9")
-	)
-	(wire
-		(pts
-			(xy 24.13 63.5) (xy 27.94 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae869a60-1c6a-48a6-be52-a0571004a874")
 	)
 	(wire
 		(pts
@@ -6662,7 +6725,7 @@
 		(uuid "eadad1c2-a137-414d-baea-a3e449215052")
 	)
 	(label "VBAT"
-		(at 33.02 60.96 0)
+		(at 22.86 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6707,7 +6770,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 27.94 63.5 270)
+		(at 27.94 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6716,7 +6779,7 @@
 		(fields_autoplaced yes)
 		(uuid "04b8b655-e50e-4e61-a7c5-eda9423f31cf")
 		(property "Reference" "#FLG02"
-			(at 29.845 63.5 0)
+			(at 26.035 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6725,7 +6788,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 31.75 63.4999 90)
+			(at 24.13 63.4999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6985,6 +7048,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 35.56 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6ead91ff-eb50-495b-b08a-bc65fa586269")
 		)
@@ -7062,6 +7134,71 @@
 			(project "esp32s3-storage"
 				(path "/14a947a4-c0d5-4265-977d-4312618765c5"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "16156c4f-fa6b-48ff-8831-d258c9ed80f8")
+		(property "Reference" "#PWR024"
+			(at 38.1 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.227 71.7042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e3e9609b-9b65-471b-800d-fb4aae18ddbc")
+		)
+		(instances
+			(project "esp32s3-storage"
+				(path "/14a947a4-c0d5-4265-977d-4312618765c5"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7783,7 +7920,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C19702"
+		(property "LCSC Part #" "C14663"
 			(at 232.41 130.81 0)
 			(effects
 				(font
@@ -8261,6 +8398,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 38.1 57.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "52a8330c-5073-44a2-b984-22dce0a128b2")
+		(property "Reference" "#PWR025"
+			(at 38.1 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 37.973 52.7558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6142841-d757-4ef3-9b48-1f707dc096af")
+		)
+		(instances
+			(project "esp32s3-storage"
+				(path "/14a947a4-c0d5-4265-977d-4312618765c5"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 228.6 26.67 0)
 		(unit 1)
@@ -8641,6 +8843,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 29.21 179.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fc9a2956-8136-485a-85e2-6c3f7d0f0032")
 		)
@@ -8860,7 +9071,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 19.05 63.5 180)
+		(at 38.1 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8868,7 +9079,7 @@
 		(dnp no)
 		(uuid "6fb7bb37-1351-4d72-853c-aa86769d9d97")
 		(property "Reference" "J2"
-			(at 21.1328 55.245 0)
+			(at 36.0172 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8876,15 +9087,15 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 21.1328 57.5564 0)
+			(at 36.0172 66.9036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal"
-			(at 19.05 63.5 0)
+		(property "Footprint" "user_created:1x2 pin gap 1.25mm SMD socket"
+			(at 38.1 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8893,7 +9104,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 19.05 63.5 0)
+			(at 38.1 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8902,7 +9113,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 19.05 63.5 0)
+			(at 38.1 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8911,7 +9122,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 19.05 63.5 0)
+			(at 38.1 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8920,7 +9131,16 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 19.05 63.5 0)
+			(at 38.1 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2845379"
+			(at 38.1 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8933,6 +9153,12 @@
 		)
 		(pin "2"
 			(uuid "796b1aa5-256d-47fd-9592-5836548443b0")
+		)
+		(pin "3"
+			(uuid "cba8f560-7bd0-425c-9662-28f8d217b77e")
+		)
+		(pin "4"
+			(uuid "81d1ce91-fed4-41f9-abff-629439526903")
 		)
 		(instances
 			(project "esp32s3-storage"
@@ -8989,6 +9215,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 35.56 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25804"
+			(at 35.56 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9149,7 +9384,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C2913198"
+		(property "LCSC Part #" "C2913204"
 			(at 198.12 58.42 0)
 			(effects
 				(font
@@ -9534,6 +9769,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 29.21 163.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d02a3820-1f58-47c0-9da3-44d18c6d9d33")
 		)
@@ -9736,7 +9980,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "user_created:fpc connector 1x12 P0.5mm bottom-side back-flip"
+		(property "Footprint" "user_created:JST AFC01-S12FCC-00 1x2 P0.5mm back-flip bottom-side"
 			(at 267.97 130.81 0)
 			(effects
 				(font
@@ -10098,6 +10342,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 184.15 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e16fd5c7-b8eb-49ec-8af0-f94ac93c97d8")
 		)
@@ -10345,7 +10598,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C113206"
+		(property "LCSC Part #" "C381082"
 			(at 83.82 173.99 0)
 			(effects
 				(font
@@ -10739,6 +10992,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 43.18 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "21852503-e3a6-4d29-9250-ffa3f402770e")
 		)
@@ -10997,6 +11259,15 @@
 		)
 		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
 			(at 229.616 129.286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2150"
+			(at 195.58 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11289,7 +11560,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C82544"
+		(property "LCSC Part #" "C8598"
 			(at 41.91 40.64 0)
 			(effects
 				(font
